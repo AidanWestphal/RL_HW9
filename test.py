@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     input_dim = (3, new_h, new_w)
     out_dim = 11
-    model_path = 'cnn_buildings_98pct.pth'
+    model_path = 'cnn_buildings.pth'
 
     network = CNN(in_dim=input_dim, out_dim=out_dim).to(device)
     network.load_state_dict(torch.load(model_path))
